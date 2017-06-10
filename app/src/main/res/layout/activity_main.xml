@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+                android:id="@+id/rootRL"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:src="@drawable/backgroundtreethree"
+        android:scaleType="fitEnd" />
+
+    <TextView
+        android:id="@+id/question_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center"
+        android:layout_marginTop="250dp"
+        android:text="@string/app_name"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="40dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:shadowColor="#374c34"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="3"
+        />
+
+
+
+    <Button
+        android:id="@+id/breathe_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="580dp"
+        android:layout_marginRight="135dp"
+        android:layout_marginLeft="30dp"
+        android:width="110dp"
+        android:height="65dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:backgroundTint="#b9b9b9"
+        android:text="@string/breathe_button" />
+
+    <Button
+        android:id="@+id/game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_toRightOf="@+id/breathe_button"
+        android:layout_marginTop="580dp"
+        android:width="110dp"
+        android:height="65dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:backgroundTint="#b9b9b9"
+        android:text="@string/game_button" />
+
+    <ImageButton
+        android:id="@+id/setting_button"
+        android:layout_width="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="18dp"
+        android:layout_height="50dp"
+        android:background="@drawable/settingsbutton"
+        android:drawablePadding="4dp"/>
+
+</RelativeLayout>

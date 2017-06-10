@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="teamberg.chillapp.SettingzActivity">
+
+    <TextView
+        android:id="@+id/theme_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="30dp"
+        android:text="Theme:"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="30dp"
+        android:textColor="#b9b9b9"
+        android:textStyle="bold"
+        />
+
+    <RadioGroup android:id="@+id/toggleGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="180dp"
+                android:layout_marginLeft="60dp"
+                android:orientation="vertical">
+
+    <RadioButton android:id="@+id/radio_pirates"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/pirates"
+                 android:fontFamily="sans-serif"
+                 android:layout_marginBottom="30dp"
+                 android:textSize="25dp"
+                 android:textColor="#b9b9b9"
+                     android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_ninjas"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="sans-serif"
+                     android:textSize="25dp"
+                     android:textColor="#b9b9b9"
+                     android:text="@string/ninjas"
+                     android:onClick="onRadioButtonClicked"/>
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/settingz_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:text="Settings"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="40dp"
+        android:textColor="#b9b9b9"
+        android:textStyle="bold"
+        />
+
+    <ImageButton
+        android:id="@+id/setting_button"
+        android:layout_width="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="2dp"
+        android:layout_height="50dp"
+        android:background="@drawable/settingsbutton"
+        android:drawablePadding="4dp"/>
+
+    <ImageButton
+        android:id="@+id/home_button"
+        android:layout_width="52dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="325dp"
+        android:layout_height="48dp"
+        android:background="@drawable/home"
+        android:drawablePadding="4dp"/>
+
+    <TextView
+        android:id="@+id/copyright_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:gravity="center"
+        android:layout_marginTop="600dp"
+        android:text="Copyright ©2017. Team Berg"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="15dp"
+        android:textColor="#b9b9b9"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mute"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/toggleGroup"
+        android:layout_alignLeft="@+id/theme_view"
+        android:layout_alignStart="@+id/theme_view"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="30dp"
+        android:textColor="#b9b9b9"
+        android:textStyle="bold"
+        android:layout_marginTop="104dp"/>
+
+</RelativeLayout>

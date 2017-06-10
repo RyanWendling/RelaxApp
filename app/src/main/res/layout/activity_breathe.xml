@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="teamberg.chillapp.BreatheActivity">
+
+    <TextView
+        android:id="@+id/display_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="#b9b9b9"
+        android:text="2"
+        android:layout_above="@+id/start_button"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:layout_marginBottom="5dp"/>
+
+    <ImageView
+        android:id="@+id/step_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+    />
+
+    <TextView
+        android:id="@+id/step_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#b9b9b9"
+        android:text="press start to begin"
+        android:textSize="20dp"
+        android:layout_below="@+id/setting_button"
+        android:layout_marginTop="38dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:id="@+id/setting_button"
+        android:layout_width="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="2dp"
+        android:layout_height="50dp"
+        android:background="@drawable/settingsbutton"
+        android:drawablePadding="4dp"/>
+
+    <ImageButton
+        android:id="@+id/home_button"
+        android:layout_width="52dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="325dp"
+        android:layout_height="48dp"
+        android:background="@drawable/home"
+        android:drawablePadding="4dp"/>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:width="110dp"
+        android:height="65dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:backgroundTint="#b9b9b9"
+        android:text="start"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
